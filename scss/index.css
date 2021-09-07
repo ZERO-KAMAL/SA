@@ -184,6 +184,18 @@ margin-top: 72px; */
   height: 100%;
 }
 
+.hero-main .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .hero-main .hero-left {
   padding: 0 0 0 20px;
 }
@@ -241,16 +253,24 @@ margin-top: 72px; */
   background-color: #3587c8;
   color: white;
   padding: 8px 15px;
-  border: 3px;
+  border-radius: 3px;
+}
+
+.hero-main .hero-right {
+  overflow: hidden;
 }
 
 .hero-main .hero-right img {
   width: 100%;
-  height: 100%;
+  margin-top: -50px;
 }
 
 .hero-main .hero-right .progressbar {
   counter-reset: step;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .hero-main .hero-right .progressbar li {
@@ -306,6 +326,10 @@ margin-top: 72px; */
 
 .hero-main .hero-right .progressbar li.active + li:after {
   background-color: #3587c8;
+}
+
+.aboutUs .aboutus-content {
+  margin: 80px 0;
 }
 
 .testimonial-main {
@@ -880,7 +904,7 @@ footer .quick-links ul li a {
 }
 
 .clinicsDetails {
-  padding: 40px 0 40px 0;
+  padding: 40px 0;
 }
 
 .clinicsDetails .clinics-content {
