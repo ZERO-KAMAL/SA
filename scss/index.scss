@@ -98,6 +98,10 @@ body {
   }
 }
 
+img{
+  border-radius: 3px;
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -117,6 +121,12 @@ margin-top: 72px; */
     font-size: 28px;
     font-weight: 600;
     color: white !important;
+  }
+  a{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
   }
 
   @media (max-width: 992px) {
@@ -731,7 +741,7 @@ footer {
       margin: auto;
       a {
         width: 30px;
-        height: 30px;
+        height: 33px;
         text-align: center;
         text-decoration: none;
         color: $CB;
@@ -740,20 +750,22 @@ footer {
         margin: 0 6px;
         border-radius: 50%;
         border: 1px solid $CM;
-        position: relative;
-        overflow: hidden;
-        transition: transform 0.5s;
-        &::after {
-          content: "";
-          width: 110%;
-          height: 110%;
-          top: -80px;
-          left: -0px;
-          background: #000;
-          background: linear-gradient(-45deg, $CM, #000);
-          position: absolute;
-          transition: 0.5s;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+          background-color: $CM;
+          color: white;
         }
+        // &::after {
+        //   content: "";
+        //   width: 120%;
+        //   height: 100%;
+        //   top: -78px;
+        //   left: -1px;
+        //   background: $CM;
+        //   // background: linear-gradient(-deg, $CM, #000);
+        //   position: absolute;
+        //   transition: 0.5s;
+        // }
         &:hover::after {
           top: 0;
         }
@@ -779,12 +791,13 @@ footer {
     text-align: start;
     font-weight: 300;
   }
+  h4 {
+    font-family: "Dosis", sans-serif;
+    color: $CM;
+    font-weight: bold;
+  }
   .quick-links {
-    h4 {
-      font-family: "Dosis", sans-serif;
-      color: $CM;
-      font-weight: bold;
-    }
+   
     ul {
       @include MarPad();
       li {
@@ -915,15 +928,9 @@ footer {
     list-style: none;
     text-align: start !important;
     li {
-      a {
-        text-decoration: none;
-        span {
-          color: $SC;
-          font-weight: 700;
-          border-bottom: 1px solid $CM;
-        }
+          color: #888;
+        
       }
-    }
   }
   .text-center {
     font-size: 18px;
@@ -966,3 +973,16 @@ footer {
     }
   }
 }
+
+// teams
+.team{
+  .team-content{
+  margin:80px 0px ;
+    
+  .row{
+    margin: 40px 0;
+  }
+
+  }
+}
+
