@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: "Merriweather", serif;
+  font-family: 'Dosis', sans-serif;
   line-height: 1.6;
   letter-spacing: 1px;
   font-size: 14px;
@@ -184,18 +184,6 @@ margin-top: 72px; */
   height: 100%;
 }
 
-.hero-main .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .hero-main .hero-left {
   padding: 0 0 0 20px;
 }
@@ -205,7 +193,8 @@ margin-top: 72px; */
   text-align: center;
   letter-spacing: 0.05em;
   color: #3587c8;
-  font-weight: 600;
+  font-weight: bold;
+  text-transform: uppercase;
   font-size: 24px;
   position: relative;
 }
@@ -256,13 +245,9 @@ margin-top: 72px; */
   border-radius: 3px;
 }
 
-.hero-main .hero-right {
-  overflow: hidden;
-}
-
 .hero-main .hero-right img {
-  width: 100%;
-  margin-top: -50px;
+  width: 90%;
+  margin-top: -80px;
 }
 
 .hero-main .hero-right .progressbar {
@@ -328,6 +313,12 @@ margin-top: 72px; */
   background-color: #3587c8;
 }
 
+@media (max-width: 768px) {
+  .hero-main .hero-right img {
+    width: 100%;
+  }
+}
+
 .aboutUs .aboutus-content {
   margin: 80px 0;
 }
@@ -344,6 +335,7 @@ margin-top: 72px; */
   -webkit-box-shadow: 8px 4px 0 0 #3587c8;
           box-shadow: 8px 4px 0 0 #3587c8;
   position: relative;
+  height: 360px;
 }
 
 .testimonial-main .testimonial .pic {
@@ -478,6 +470,9 @@ margin-top: 72px; */
   #why-us .why-content {
     margin-top: 20px;
   }
+  #why-us .why-content .title-why {
+    text-align: center;
+  }
 }
 
 #program {
@@ -492,6 +487,12 @@ margin-top: 72px; */
   border-radius: 3px;
   border: 1px solid #e9eced;
   overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#program .card:hover {
+  margin-top: -10px;
 }
 
 #program .card .imagee {
@@ -549,21 +550,22 @@ margin-top: 72px; */
 }
 
 .contact .info {
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
+  border-top: 3px solid #3587c8;
+  border-bottom: 3px solid #3587c8;
   padding: 30px;
   background: #fff;
   width: 100%;
   -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+  height: 100%;
 }
 
 .contact .info i {
-  font-size: 20px;
-  color: #47b2e4;
+  font-size: 1rem;
+  color: #3587c8;
   float: left;
-  width: 44px;
-  height: 44px;
+  width: 35px;
+  height: 35px;
   background: #e7f5fb;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -581,7 +583,7 @@ margin-top: 72px; */
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 22px;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 5px;
   color: #37517e;
@@ -592,7 +594,7 @@ margin-top: 72px; */
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #6182ba;
+  color: #3587c8;
 }
 
 .contact .info .email p {
@@ -604,7 +606,7 @@ margin-top: 72px; */
 }
 
 .contact .info .social-links a {
-  font-size: 18px;
+  font-size: 1rem;
   display: inline-block;
   background: #333;
   color: #fff;
@@ -620,22 +622,22 @@ margin-top: 72px; */
 }
 
 .contact .info .social-links a:hover {
-  background: #47b2e4;
+  background: #3587c8;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #47b2e4;
+  background: #3587c8;
   color: #fff;
 }
 
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
-  padding: 30px;
+  border-top: 3px solid #3587c8;
+  border-bottom: 3px solid #3587c8;
+  padding: 20px;
   background: #fff;
   -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
@@ -696,7 +698,7 @@ margin-top: 72px; */
 }
 
 .contact .php-email-form .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .contact .php-email-form label {
@@ -714,19 +716,19 @@ margin-top: 72px; */
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #47b2e4;
+  border-color: #3587c8;
 }
 
 .contact .php-email-form input {
-  height: 44px;
+  height: 35px;
 }
 
 .contact .php-email-form textarea {
-  padding: 10px 12px;
+  padding: 8px 12px;
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #47b2e4;
+  background: #3587c8;
   border: 0;
   padding: 12px 34px;
   color: #fff;
@@ -861,7 +863,7 @@ footer .social-wrap .social-links a .fab {
 
 footer p {
   color: #3587c8;
-  font-size: 14px;
+  font-size: 1.2rem;
   text-align: start;
   font-weight: 300;
 }
@@ -1070,5 +1072,17 @@ footer .quick-links ul li a {
 
 .champDetails p {
   text-align: start;
+}
+
+.champDetails ul {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+.champDetails ul li {
+  margin-top: 15px;
 }
 /*# sourceMappingURL=index.css.map */

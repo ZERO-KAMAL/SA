@@ -36,8 +36,8 @@ $SB: #fffafa;
 body {
   // font-family: "Roboto", sans-serif;
   // font-family: 'Open Sans', sans-serif;
-  // font-family: 'Dosis', sans-serif;
-  font-family: "Merriweather", serif;
+  font-family: 'Dosis', sans-serif;
+  // font-family: "Merriweather", serif;
   // font-family: "square721";
   line-height: 1.6;
   letter-spacing: 1px;
@@ -67,6 +67,7 @@ body {
     padding-bottom: 20px;
     position: relative;
     color: $CM;
+    
     &::before {
       content: "";
       position: absolute;
@@ -183,12 +184,6 @@ margin-top: 72px; */
 .hero-main {
   width: 100%;
   height: 100%;
-  .row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
   .hero-left {
     padding: 0 0 0 20px;
     h4 {
@@ -196,7 +191,8 @@ margin-top: 72px; */
       text-align: center;
       letter-spacing: 0.05em;
       color: $CM;
-      font-weight: 600;
+      font-weight: bold;
+      text-transform: uppercase;
       font-size: 24px;
       position: relative;
       &::before {
@@ -242,10 +238,9 @@ margin-top: 72px; */
     }
   }
   .hero-right {
-    overflow: hidden;
     img {
-      width: 100%;
-      margin-top: -50px;
+      width: 90%;
+      margin-top: -80px;
     }
     .progressbar {
       counter-reset: step;
@@ -300,6 +295,13 @@ margin-top: 72px; */
       }
     }
   }
+  @media (max-width: 768px) {
+    .hero-right{
+      img{
+        width: 100%;
+      }
+    }
+  }
 }
 
 //about-us
@@ -320,6 +322,7 @@ margin-top: 72px; */
     background: #f9f9f9;
     box-shadow: 8px 4px 0 0 $CM;
     position: relative;
+    height: 360px;
 
     .pic {
       width: 80%;
@@ -437,6 +440,9 @@ margin-top: 72px; */
   @media (max-width: 767px) {
     .why-content {
       margin-top: 20px;
+      .title-why{
+        text-align: center;
+      }
     }
   }
 }
@@ -451,6 +457,10 @@ margin-top: 72px; */
     border-radius: 3px;
     border: 1px solid $BC;
     overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      margin-top: -10px;
+    }
     .imagee{
       width: 100%;
       height: 200px;
@@ -499,20 +509,21 @@ margin-top: 72px; */
   }
 }
 .contact .info {
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
+  border-top: 3px solid $CM;
+  border-bottom: 3px solid $CM;
   padding: 30px;
   background: #fff;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+  height: 100%;
 }
 
 .contact .info i {
-  font-size: 20px;
-  color: #47b2e4;
+  font-size: 1rem;
+  color: $CM;
   float: left;
-  width: 44px;
-  height: 44px;
+  width: 35px;
+  height: 35px;
   background: #e7f5fb;
   display: flex;
   justify-content: center;
@@ -523,7 +534,7 @@ margin-top: 72px; */
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 22px;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 5px;
   color: #37517e;
@@ -534,7 +545,7 @@ margin-top: 72px; */
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #6182ba;
+  color: $CM;
 }
 
 .contact .info .email p {
@@ -546,7 +557,7 @@ margin-top: 72px; */
 }
 
 .contact .info .social-links a {
-  font-size: 18px;
+  font-size: 1rem;
   display: inline-block;
   background: #333;
   color: #fff;
@@ -561,22 +572,22 @@ margin-top: 72px; */
 }
 
 .contact .info .social-links a:hover {
-  background: #47b2e4;
+  background: $CM;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #47b2e4;
+  background: $CM;
   color: #fff;
 }
 
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
-  padding: 30px;
+  border-top: 3px solid $CM;
+  border-bottom: 3px solid $CM;
+  padding: 20px;
   background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
@@ -636,7 +647,7 @@ margin-top: 72px; */
 }
 
 .contact .php-email-form .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .contact .php-email-form label {
@@ -653,19 +664,19 @@ margin-top: 72px; */
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #47b2e4;
+  border-color: $CM;
 }
 
 .contact .php-email-form input {
-  height: 44px;
+  height: 35px;
 }
 
 .contact .php-email-form textarea {
-  padding: 10px 12px;
+  padding: 8px 12px;
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #47b2e4;
+  background: $CM;
   border: 0;
   padding: 12px 34px;
   color: #fff;
@@ -764,7 +775,7 @@ footer {
   }
   p {
     color: $CM;
-    font-size: 14px;
+    font-size: 1.2rem;
     text-align: start;
     font-weight: 300;
   }
@@ -946,5 +957,12 @@ footer {
   }
   p {
     text-align: start;
+  }
+  ul{
+    @include MarPad();
+    list-style: none;
+    li{
+      margin-top: 15px;
+    }
   }
 }
