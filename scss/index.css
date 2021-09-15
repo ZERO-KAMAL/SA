@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   line-height: 1.6;
   letter-spacing: 1px;
   font-size: 14px;
@@ -80,7 +80,7 @@ body {
 }
 
 .section-title h2 p {
-  color: #CFD2D5;
+  color: #cfd2d5;
 }
 
 img {
@@ -561,7 +561,7 @@ margin-top: 72px; */
 }
 
 .contact .section-title p {
-  color: #9B757D;
+  color: #9b757d;
 }
 
 .contact .info {
@@ -916,6 +916,66 @@ footer .quick-links ul li a {
   margin-top: 70px;
 }
 
+.clinicsDetails .clinics-content img {
+  height: auto;
+}
+
+.clinicsDetails .clinics-content .clinic-left h4 {
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #3587c8;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 24px;
+  position: relative;
+}
+
+.clinicsDetails .clinics-content .clinic-left h4::before {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background-color: #3587c8;
+}
+
+.clinicsDetails .clinics-content .clinic-left .clinics-list {
+  margin: 20px;
+}
+
+.clinicsDetails .clinics-content .clinic-left .clinics-list ul {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+.clinicsDetails .clinics-content .clinic-left .clinics-list ul li {
+  font-size: 12px;
+  border-bottom: 1px solid #e9eced;
+}
+
+.clinicsDetails .clinics-content .clinic-left .clinics-list ul li .left-list strong {
+  font-size: 1rem !important;
+  color: #3587c8;
+  font-weight: 600;
+}
+
+.clinicsDetails .clinics-content .clinic-left .clinics-list ul li .left-list .date {
+  background-color: #fffafa;
+  padding: 5px 15px;
+}
+
+.clinicsDetails .clinics-content .clinic-left .clinics-list ul li .right-list button {
+  border: none;
+  background-color: #3587c8;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 3px;
+}
+
 .clinicsDetails h4 {
   font-family: "Dosis", sans-serif;
   text-transform: uppercase;
@@ -980,6 +1040,66 @@ footer .quick-links ul li a {
   color: #ffcd3f;
 }
 
+.miniAlliess .miniAllies-content .miniAllies-left {
+  margin: 20px 20px;
+}
+
+.miniAlliess .miniAllies-content .miniAllies-left h4 {
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #3587c8;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 24px;
+  position: relative;
+}
+
+.miniAlliess .miniAllies-content .miniAllies-left h4::before {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background-color: #3587c8;
+}
+
+.miniAlliess .miniAllies-content .miniAllies-left .clinics-list {
+  margin: 20px;
+}
+
+.miniAlliess .miniAllies-content .miniAllies-left .clinics-list ul {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+.miniAlliess .miniAllies-content .miniAllies-left .clinics-list ul li {
+  font-size: 12px;
+  border-bottom: 1px solid #e9eced;
+}
+
+.miniAlliess .miniAllies-content .miniAllies-left .clinics-list ul li .left-list strong {
+  font-size: 1rem !important;
+  color: #3587c8;
+  font-weight: 600;
+}
+
+.miniAlliess .miniAllies-content .miniAllies-left .clinics-list ul li .left-list .date {
+  background-color: #fffafa;
+  padding: 5px 15px;
+}
+
+.miniAlliess .miniAllies-content .miniAllies-left .clinics-list ul li .right-list button {
+  border: none;
+  background-color: #3587c8;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 3px;
+}
+
 .miniAlliess .banner-inner {
   margin: 80px 0;
 }
@@ -1009,7 +1129,7 @@ footer .quick-links ul li a {
   font-size: 1rem;
 }
 
-.miniAlliess span {
+.miniAlliess .session span {
   font-family: "Dosis", sans-serif;
   color: #3587c8;
   font-weight: 800;
@@ -1065,6 +1185,7 @@ footer .quick-links ul li a {
   text-transform: uppercase;
   padding: 20px 0 0 0;
   color: #3587c8;
+  font-weight: bold;
 }
 
 .champDetails p {
@@ -1081,6 +1202,141 @@ footer .quick-links ul li a {
 
 .champDetails ul li {
   margin-top: 15px;
+}
+
+.champDetails .hero-left {
+  padding: 0 0 0 20px;
+}
+
+.champDetails .hero-left h4 {
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #3587c8;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 24px;
+  position: relative;
+}
+
+.champDetails .hero-left h4::before {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background-color: #3587c8;
+}
+
+.champDetails .hero-left .clinics-list {
+  margin: 20px;
+}
+
+.champDetails .hero-left .clinics-list ul {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+.champDetails .hero-left .clinics-list ul li {
+  font-size: 12px;
+  border-bottom: 1px solid #e9eced;
+}
+
+.champDetails .hero-left .clinics-list ul li .left-list strong {
+  font-size: 1rem !important;
+  color: #3587c8;
+  font-weight: 600;
+}
+
+.champDetails .hero-left .clinics-list ul li .left-list .date {
+  background-color: #fffafa;
+  padding: 5px 15px;
+}
+
+.champDetails .hero-left .clinics-list ul li .right-list button {
+  border: none;
+  background-color: #3587c8;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 3px;
+}
+
+.champDetails .hero-right img {
+  width: 90%;
+  margin-top: -80px;
+}
+
+.champDetails .hero-right .progressbar {
+  counter-reset: step;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.champDetails .hero-right .progressbar li {
+  font-family: "Dosis", sans-serif;
+  list-style: none;
+  display: inline-block;
+  width: 30.33%;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.champDetails .hero-right .progressbar li::before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: none;
+  border-radius: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  background-color: #3587c8;
+  color: white;
+}
+
+.champDetails .hero-right .progressbar li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #3587c8;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+
+.champDetails .hero-right .progressbar li:first-child:after {
+  content: none;
+}
+
+.champDetails .hero-right .progressbar li.active {
+  color: #3587c8;
+}
+
+.champDetails .hero-right .progressbar li.active:before {
+  border-color: #3587c8;
+}
+
+.champDetails .hero-right .progressbar li.active + li:after {
+  background-color: #3587c8;
+}
+
+@media (max-width: 768px) {
+  .champDetails .hero-right img {
+    width: 100%;
+  }
 }
 
 .team .team-content {
